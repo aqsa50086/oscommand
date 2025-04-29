@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Linux Tutorial</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
+        h1, h2 { color: #333; }
+        .task { margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9; }
+        .command { font-family: monospace; background-color: #eee; padding: 5px; border-radius: 3px; }
+        .explanation { font-style: italic; color: #777; }
+    </style>
+</head>
+<body>
+    <h1></h1>
+
+    <div class="task">
+        <h2>1. Navigating the Filesystem</h2>
+        <p>Understanding how to move around your Linux system is fundamental.</p>
+        <ul>
+            <li>
+                <strong><code>pwd</code></strong>: <span class="command">pwd</span>
+                <p class="explanation">Prints the name of the current/working directory.</p>
+            </li>
+            <li>
+                <strong><code>cd</code></strong>: <span class="command">cd [directory]</span>
+                <p class="explanation">Changes the current directory. Use <span class="command">cd ..</span> to go up one level, and <span class="command">cd ~</span> or just <span class="command">cd</span> to go to your home directory.</p>
+            </li>
+            <li>
+                <strong><code>ls</code></strong>: <span class="command">ls [options] [directory]</span>
+                <p class="explanation">Lists directory contents. Useful options include <span class="command">ls -l</span> (long listing), <span class="command">ls -a</span> (all files, including hidden ones), and <span class="command">ls -h</span> (human-readable file sizes).</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="task">
+        <h2>2. Working with Files and Directories</h2>
+        <p>Creating, viewing, and manipulating files and directories are essential tasks.</p>
+        <ul>
+            <li>
+                <strong><code>mkdir</code></strong>: <span class="command">mkdir [directory_name]</span>
+                <p class="explanation">Creates a new directory.</p>
+            </li>
+            <li>
+                <strong><code>touch</code></strong>: <span class="command">touch [file_name]</span>
+                <p class="explanation">Creates an empty file or updates the timestamp of an existing file.</p>
+            </li>
+            <li>
+                <strong><code>cat</code></strong>: <span class="command">cat [file_name]</span>
+                <p class="explanation">Displays the content of a file.</p>
+            </li>
+            <li>
+                <strong><code>cp</code></strong>: <span class="command">cp [source] [destination]</span>
+                <p class="explanation">Copies files or directories. Use <span class="command">cp -r</span> for recursive copying of directories.</p>
+            </li>
+            <li>
+                <strong><code>mv</code></strong>: <span class="command">mv [source] [destination]</span>
+                <p class="explanation">Moves or renames files or directories.</p>
+            </li>
+            <li>
+                <strong><code>rm</code></strong>: <span class="command">rm [file_name]</span>
+                <p class="explanation">Removes files. Use with caution! Use <span class="command">rm -r</span> to remove directories and their contents recursively (also use with caution!).</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="task">
+        <h2>3. Getting Help</h2>
+        <p>Linux has built-in documentation to assist you.</p>
+        <ul>
+            <li>
+                <strong><code>man</code></strong>: <span class="command">man [command_name]</span>
+                <p class="explanation">Displays the manual page for a given command. Use the arrow keys to navigate and press <span class="command">q</span> to quit.</p>
+            </li>
+            <li>
+                <strong><code>--help</code></strong>: <span class="command">[command_name] --help</span>
+                <p class="explanation">Many commands offer a brief help message with common options.</p>
+            </li>
+        </ul>
+    </div>
+
+    <p>This is just a brief introduction to some fundamental Linux commands. There's much more to explore!</p>
+</body>
+</html>
