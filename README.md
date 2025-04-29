@@ -1,0 +1,2 @@
+# oscommand
+linux commands
